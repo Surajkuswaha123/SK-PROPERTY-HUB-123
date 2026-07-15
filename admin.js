@@ -27,9 +27,7 @@ async function loadLeads() {
 
     try {
 
-        const response = await fetch(
-            "http://localhost:5000/api/leads"
-        );
+        const response = await fetch("https://sk-property-hub-123-production.up.railway.app/api/leads");
 
         const result =
             await response.json();
@@ -115,8 +113,7 @@ async function deleteLead(id) {
 
     try {
 
-        await fetch(
-            `http://localhost:5000/api/leads/${id}`,
+        await fetch(`https://sk-property-hub-123-production.up.railway.app/api/leads/${id}`,
             {
                 method: "DELETE"
             }
@@ -189,15 +186,15 @@ const exportBtn =
 if (exportBtn) {
 
     exportBtn.addEventListener(
-        "click",
-        function () {
+    "click",
+    function () {
 
-            window.open(
-                "http://localhost:5000/api/leads/export",
-                "_blank"
-            );
+        window.open(
+            "https://sk-property-hub-123-production.up.railway.app/api/leads/export",
+            "_blank"
+        );
 
-        }
-    );
+    }
+);
 
 }

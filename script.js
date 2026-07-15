@@ -87,7 +87,7 @@ if (leadForm) {
             console.log("Sending request to backend...");
 
             const response = await fetch(
-                "http://localhost:5000/api/leads",
+                "https://sk-property-hub-123-production.up.railway.app/api/leads",
                 {
                     method: "POST",
 
