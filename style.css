@@ -1,0 +1,480 @@
+/* =====================================
+   SK PROPERTY HUB
+   Owner: Suraj Kuswaha
+   Main Stylesheet
+===================================== */
+
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    color:#fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#22c55e;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    position:relative;
+    height:90vh;
+
+    background:url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1600")
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    color:white;
+    z-index:2;
+    width:90%;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    margin:10px;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+}
+
+.secondary-btn{
+    background:#22c55e;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:#16a34a;
+}
+
+/* ===== SEARCH SECTION ===== */
+
+.search-section{
+    background:white;
+    padding:60px 0;
+}
+
+.search-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search-form{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.search-form input,
+.search-form select{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.search-form button{
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.search-form button:hover{
+    background:#1d4ed8;
+}
+
+/* ===== SECTION TITLE ===== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+/* ===== SERVICES ===== */
+
+.services{
+    padding:80px 0;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service-card{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+/* ===== PROPERTIES ===== */
+
+.properties{
+    padding:80px 0;
+    background:#eef4ff;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.property-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.property-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.property-info{
+    padding:20px;
+}
+
+.property-info h3{
+    margin-bottom:10px;
+}
+
+.property-info p{
+    color:#555;
+}
+
+.property-info h4{
+    margin-top:12px;
+    color:#22c55e;
+}
+
+/* ===== WHY US ===== */
+
+.why-us{
+    padding:80px 0;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.why-grid div{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.07);
+    font-weight:bold;
+}
+
+/* ===== LEAD FORM ===== */
+
+.lead-form{
+    padding:80px 0;
+    background:white;
+}
+
+.lead-form h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.lead-form form{
+    max-width:700px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.lead-form input,
+.lead-form textarea,
+.lead-form select{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.lead-form textarea{
+    resize:none;
+    min-height:120px;
+}
+
+.lead-form button{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.lead-form button:hover{
+    background:#16a34a;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+    padding:80px 0;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===== FLOATING BUTTONS ===== */
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#25d366;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+    text-decoration:none;
+
+    z-index:999;
+}
+
+.call-btn{
+    position:fixed;
+    bottom:95px;
+    right:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#2563eb;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:25px;
+    text-decoration:none;
+
+    z-index:999;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .search-form{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .property-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav ul{
+        display:none;
+
+        position:absolute;
+        top:75px;
+        left:0;
+
+        width:100%;
+
+        background:#0f172a;
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .search-form{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+}

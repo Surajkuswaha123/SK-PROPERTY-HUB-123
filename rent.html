@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Property | SK Property Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <div class="logo">
+            <h2>SK Property Hub</h2>
+        </div>
+
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+</header>
+
+<section class="hero" style="height:50vh;">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Rent Property</h1>
+        <p>Find affordable rental properties in Mohali.</p>
+    </div>
+</section>
+
+<section class="properties">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Rental Properties
+        </h2>
+
+        <div class="property-grid">
+
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200">
+                <div class="property-info">
+                    <h3>2 BHK Apartment</h3>
+                    <p>Mohali</p>
+                    <h4>₹12,000 / Month</h4>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200">
+                <div class="property-info">
+                    <h3>3 BHK Flat</h3>
+                    <p>Mohali</p>
+                    <h4>₹18,000 / Month</h4>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200">
+                <div class="property-info">
+                    <h3>Independent House</h3>
+                    <p>Mohali</p>
+                    <h4>₹25,000 / Month</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="lead-form">
+
+    <div class="container">
+
+        <h2>Need a Rental Property?</h2>
+
+        <form>
+
+            <input type="text"
+                placeholder="Full Name"
+                required>
+
+            <input type="tel"
+                placeholder="Mobile Number"
+                required>
+
+            <input type="text"
+                placeholder="Preferred Location">
+
+            <input type="text"
+                placeholder="Monthly Budget">
+
+            <textarea
+                placeholder="Property Requirement">
+            </textarea>
+
+            <button type="submit">
+                Submit Requirement
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SK Property Hub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

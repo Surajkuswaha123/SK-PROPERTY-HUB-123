@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | SK Property Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:250px;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+    background:#f8fafc;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.leads-table{
+    margin-top:30px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+.status{
+    color:green;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>SK Property Hub</h2>
+
+<ul>
+
+<li><a href="#">Dashboard</a></li>
+
+<li><a href="#">Leads</a></li>
+
+<li><a href="#">Buy Requests</a></li>
+
+<li><a href="#">Rent Requests</a></li>
+
+<li><a href="#">Sell Requests</a></li>
+
+<li><a href="#">Settings</a></li>
+
+<li><a href="index.html">Website</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+<h1>Admin Dashboard</h1>
+
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Leads</h3>
+<h2>120</h2>
+</div>
+
+<div class="card">
+<h3>Buy Requests</h3>
+<h2>40</h2>
+</div>
+
+<div class="card">
+<h3>Rent Requests</h3>
+<h2>50</h2>
+</div>
+
+<div class="card">
+<h3>Sell Requests</h3>
+<h2>30</h2>
+</div>
+
+</div>
+
+<!-- Leads Table -->
+
+<div class="leads-table">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Mobile</th>
+<th>Requirement</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Rahul Sharma</td>
+<td>9876543210</td>
+<td>Buy Property</td>
+<td class="status">New</td>
+
+</tr>
+
+<tr>
+
+<td>Amit Kumar</td>
+<td>9123456780</td>
+<td>Rent Property</td>
+<td class="status">Contacted</td>
+
+</tr>
+
+<tr>
+
+<td>Rohit Singh</td>
+<td>9988776655</td>
+<td>Sell Property</td>
+<td class="status">New</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

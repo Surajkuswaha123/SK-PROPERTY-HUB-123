@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SK Property Hub</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>SK Property Hub Admin Dashboard</h1>
+        <div class="dashboard-header">
+
+            <h1>SK Property Hub Admin Dashboard</h1>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+        <button id="exportBtn">
+            📊 Export Excel
+        </button>
+        <input type="text" id="searchInput" placeholder="Search by Name, Mobile, Email..." style="
+        width:100%;
+        padding:12px;
+        margin-bottom:20px;
+        border:1px solid #ccc;
+        border-radius:8px;
+    ">
+
+        <div class="stats">
+
+            <div class="card">
+                <h2 id="totalLeads">0</h2>
+                <p>Total Leads</p>
+            </div>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Requirement</th>
+                        <th>Message</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="leadTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
